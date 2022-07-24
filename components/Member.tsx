@@ -2,14 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-interface Props {
+interface IProps {
   id: string
   name: string
   socialId: string
   link: string
 }
 
-const Member: React.FC<Props> = ({ id, name, socialId, link }) => {
+const Member: React.FC<IProps> = ({ id, name, socialId, link }) => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div
